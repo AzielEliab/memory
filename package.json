@@ -1,0 +1,28 @@
+{
+  "name": "memory",
+  "version": "0.1.0",
+  "description": "AKM-TRIAD-1.0 adaptive knowledge memory. Append-only ChainLock learn ledger, derived Belief List, and 3-of-4 triad. Posterior is calibrated belief, not truth.",
+  "license": "Apache-2.0",
+  "author": "Aziel Eliab",
+  "type": "module",
+  "bin": {
+    "memory": "./src/cli.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/cli.js serve",
+    "memory": "node src/cli.js",
+    "pack": "node workers/download-tracker/scripts/pack-archive.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzielEliab/memory.git"
+  }
+}
